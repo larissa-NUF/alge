@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.letra_rosa {	
+	color:#FF7373;
+	font-style: normal;
+	font-family: 'Inter';
+}
+
+
+
+body{
+	background: linear-gradient(90deg, #FFD6D6 0%, rgba(252, 209, 209, 0.6) 24.48%, rgba(252, 215, 215, 0.28) 60.42%, #FFFFFF 100%);
+	font-family: "inter";
+}
+
+
+.menu{
+	width: 100%;
+	background: rgba(255, 173, 173, 0.5);
+	border-bottom: 2px solid #FFB1B1;
+}
+
+.menu h3{
+	padding: 10px;
+}
+
+.menu h3 a{
+	color: rgb(12, 12, 12);
+}
+
+.menu h3 a:hover{
+	text-decoration: underline;
+}
+	
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+}
+
+.login{
+	padding: 50px;
+	border: 2px solid #FF7373;
+	border-radius:20px;
+	
+}
+
+.imagem{
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.imagem img{
+	width: 5em;
+}
+
+form{
+	width: auto;
+}
+
+#senha{
+	margin-top: 5em;
+}
+						
+#botao {
+	padding: 10px;
+	width: 100%;
+	color: #fff;
+	background:#FF7373;
+	border-radius:50px;
+	border: 2px solid #FF7373;
+	margin-top: 2em;
+}		
+
+.campos{
+	display: flex;
+	flex-direction: column;
+}
+
+.campos input{
+	text-decoration: none;
+	border: 2px solid #FFB1B1;
+	height: 44px;
+	border-radius: 18px;
+	font-size: 1em;
+}
+
+.esquerda_cima {
+	background-color: #CA9CD6;
+	border: solid 5px;
+	border-color: white;
+
+	border: solid;
+}
+		
+.direita_cima {
+	background-color: #9CCAD6;
+	border: solid 5px;
+	border-color: white;
+
+	border: solid;
+	
+
+}
+
+.esquerda_baixo {
+	background-color: #FAB8B6;
+	border: solid 5px;
+	border-color: white;
+
+	border: solid;	
+}
+
+.direita_baixo {
+	background-color: #B5F7CF;
+	border: solid 5px;
+	border-color: white;
+	border: solid;
+}
+		
+        
+.vitrine {
+	border-color: white;
+	border: solid;
+	margin: auto;
+}
+
+.enviar{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.sem_conta{
+	width: 100%;
+	text-align: center;
+}
+
+.esqueci{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+		
+
+

@@ -1,0 +1,157 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.itens{
+    margin: 2em 20vw 5em 20vw ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.item{
+    width: 20%;
+    min-width: 250px;
+    border: solid 2px #FFADAD;
+    border-radius: 5px;
+    min-height: 500px;
+    
+}
+
+.itemImagem{
+    min-height: 350px;
+    border-bottom: solid 2px #FFADAD;
+    
+}
+
+.menu{
+    height: 100px;
+    background-color: #FFADAD;
+    display: flex;
+}
+
+.menuItem{
+    padding: 0 20px 0 20px;
+    margin-left: auto;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pesquisa{
+    display: flex;
+    margin-left: auto;
+    margin-right: 6em;
+ 
+}
+
+.atalho{
+    width: 100%;
+}
+
+.atalho a{
+   color: #000;
+   text-decoration: none;
+   margin-left: 0.5em;
+}
+
+.divisor{
+    height: 20px;
+    width: 2px;
+    background-color: #000;
+    margin: 0;
+    margin-left: 10px;
+}
+
+
+.atalho{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.logo{
+    text-align: center;
+    width: 30%;
+}
+
+.imgLogo{
+    height: 100%;
+    background-color: #FFF5F5;
+    border-radius: 5px;
+}
+
+.btn a{
+    color: #fff;
+}
+
+.btn{
+    color: #fff;
+    background-color: #FF7373;
+    text-decoration: none;
+    border: solid 2px #FF7373;
+    border-radius: 500px;
+    padding: 7px;
+    min-width: 120px;
+    margin-left: 2em;
+}
+
+.btnEntrar{
+    margin-left: 3em;
+}
+
+.barraPesquisa{
+    text-decoration: none;
+    border: solid 2px #FF7373;
+    width: 30vw;
+    
+}
+
+.iconPesquisa{
+    
+    position: absolute;
+    width: 30vw;
+   
+
+}
+
+.mar{
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+   
+}
+.mar svg{
+    margin-left: 5px;
+}
+
+.titulo{
+    margin: 2em 20vw 0 20vw ;
+    color: #D24242;
+
+}
+
+.bt{
+    padding: 20px 0 5px 0;
+    height: 100PX;
+    display: flex;
+ 
+    justify-content: space-between;
+  flex-direction: column;
+}
+
+.carrinho{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 4em;
+}
