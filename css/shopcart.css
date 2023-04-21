@@ -1,0 +1,36 @@
+main{
+    color: #D24242;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    margin: 5vh 10vw;
+}
+.table{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-auto-rows: auto;
+    border: 6px solid #FFD6D6;
+    border-radius: 10px;
+  }
+  
+  .items{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .table .tableHeader {
+    background-color: #FFD6D6;
+    grid-row: 1;
+  }
+  
+
+.items img{
+    width: 100px;
+    border: 1px solid #FFF5F5;
+}
