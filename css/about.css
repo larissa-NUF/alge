@@ -1,0 +1,76 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+img{
+    -webkit-user-drag: none;
+    pointer-events: all;
+}
+
+
+
+/*  CONTAINER   */
+
+
+.container {
+
+    margin: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+
+
+.container .box_texting{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    border: 6px solid #FFD6D6;
+    border-radius: 10px;
+    padding: 30px;
+    color: #D24242;
+}
+
+.text{
+    font-size: 1.2em;
+    line-height: 19px;
+}
+
+
+.float{
+    display: flex;
+    justify-content: space-between;
+}
+
+.float > div{
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+    max-width: 60%;
+}
+
+.float img {
+    border: 6px solid #FFD6D6;
+    border-radius: 10px;
+    margin-right: 5%;
+    width: 300px;
+    height: 300px;
+}
+
+
+.text > ul li{
+    margin-left: 20px;
+    list-style: disc;
+}
+
+
+
+
+
+
+/*  FIGMA   
+https://www.figma.com/file/FQnA2UE5su6d1ymr5XHg2R/Untitled?node-id=5-43&t=2Vf8ZN5meIih1tcE-0
+*/
+
+
+
