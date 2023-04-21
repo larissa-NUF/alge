@@ -20,6 +20,7 @@ body{
 
 
 .menu{
+	text-decoration: none;
 	width: 100%;
 	background: rgba(255, 173, 173, 0.5);
 	border-bottom: 2px solid #FFB1B1;
@@ -46,6 +47,7 @@ body{
 }
 
 .login{
+	
 	padding: 50px;
 	border: 2px solid #FF7373;
 	border-radius:20px;
@@ -150,6 +152,9 @@ form{
 	width: 100%;
 }
 
+.esqueci a{
+	margin-left: 20px;
+}
 		
 
 
