@@ -6,6 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: rgb(56, 56, 56);
 }
 
 .itens{
@@ -18,16 +19,50 @@ body{
 .item{
     width: 20%;
     min-width: 250px;
-    border: solid 2px #FFADAD;
+
     border-radius: 5px;
-    min-height: 500px;
-    
+    min-height: 450px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205)
+}
+
+.detalhes{
+    padding: 10px 20px 30px 20px;
+}
+
+.tituloProduto{
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.preco{
+    font-size: 1.8em;
+    margin-bottom: 5px;
 }
 
 .itemImagem{
-    min-height: 350px;
-    border-bottom: solid 2px #FFADAD;
     
+    height: 15em;
+}
+
+.dt{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #00a650;
+}
+
+.descricaoTexto{
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+.itemImagem img{
+    height: 15em;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: solid 1px #dfdfdf;
+
 }
 
 
