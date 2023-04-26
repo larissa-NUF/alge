@@ -1,42 +1,19 @@
-*{
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
-}
-
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-   height:100vh;
-   
-
-
+    height: 95vh;
     background: linear-gradient(90deg, #FFD6D6 0%, rgba(252, 209, 209, 0.6) 24.48%, rgba(252, 215, 215, 0.28) 60.42%, #FFFFFF 100%);
 }
-.telfix-cel {
-    display: flex;
-    flex-direction: row;
-}
-.endcep {
-    display: flex;
-    flex-direction: row;
-}
+
 .register-box{
     display: flex;
     flex-direction:column;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
-    box-sizing: border-box;
-
-  
-
-    padding: 38px 68px 43px 49px;
-    
+    gap: 5px;
+    width: 30%;
+    padding: 50px 30px;
     border: 6px solid #FF9D9D;
     backdrop-filter: blur(2px);
     /* Note: backdrop-filter has minimal browser support */
@@ -44,10 +21,8 @@
     border-radius: 21px;
 }
 
-input{
-    box-sizing: border-box;
-
-    width: 526px;
+.campo{
+    width: 100%;
     height: 44px;
     padding-left: 20px;
 
@@ -56,36 +31,45 @@ input{
     border-radius: 18px;
 }
 
-button{
-    width: 476px;
-    height: 68px;
-
-    background: #FF7373;
-    border-radius: 50px;
+.register-box div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.cadastro{
+
+
+button{
+    width: 60%;
+    height: 48px;
+    background: #FF7373;
+    border-radius: 50px;
+    border: none;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #D24242;
+    cursor: pointer;
+}
+
+button span{
     width: 196px;
     height: 38px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
+    font-size: 22px;
     line-height: 39px;
     text-align: center;
 
     color: #FFFFFF;
 }
 
-input::placeholder{
+
+.campo::placeholder{
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
+    font-size: 1.3em;
     line-height: 30px;
-
-
     color: #DEBCBC;
 }
 
@@ -121,70 +105,23 @@ input::placeholder{
     color: #D24242;
 }
 
-.numberHouse{
-    width: 92px;
-    height: 44px;
-}
 
-.uf{
-    width: 92px;
-    height: 44px;
-}
-
-.cidade{
-    width: 410px;
-    height: 44px;
-    margin-right: 10px;
-    margin-right: 11px;
-}
-
-.endereço{
-    width: 410px;
-    height: 44px;
-    margin-right: 10px;
-    margin-right: 11px;
-}
-
-.rectangle{
-    position: absolute;
-    top:-2px;
-    left: -6px;
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 53px;
-
-    background: rgba(255, 173, 173, 0.19);
-    border: 2px solid #FFB1B1;
-}
-
-.back{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 34px;
-    line-height: 41px;
-
-    color: #280D00  ;
-}
-
-.phone{
-    width: 251px;
+.phone, .cellphone, .uf, .cidade, .numberHouse, .endereço{
+    width: 45%;
     height: 44px;
     background: #FFFFFF;
-    border: 1px solid #FFB1B1;
-    border-radius: 18px;
-    margin-right: 11px;
 }
 
-.cellphone{
-    width: 251px;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid #FFB1B1;
-    border-radius: 18px;
+.endereço, .cidade{
+    width: 60%;
+}
+
+.numberHouse, .uf{
+    width: 30%;
 }
 
 .senha{
-    margin-bottom: 31px;
+    margin-bottom: 32px;
 }
+
+
