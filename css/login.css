@@ -1,21 +1,9 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
-}
-
-.letra_rosa {	
-	color:#FF7373;
-	font-style: normal;
-	font-family: 'Inter';
-}
-
-
-
 body{
 	background: linear-gradient(90deg, #FFD6D6 0%, rgba(252, 209, 209, 0.6) 24.48%, rgba(252, 215, 215, 0.28) 60.42%, #FFFFFF 100%);
 	font-family: "inter";
+}
+a{
+	color:#FF7373;
 }
 
 
@@ -78,9 +66,18 @@ form{
 	color: #fff;
 	background:#FF7373;
 	border-radius:50px;
-	border: 2px solid #FF7373;
+	border: none;
 	margin-top: 2em;
+	transition: .5s;
 }		
+#botao:hover{
+	background-color: #c24242;
+	cursor: pointer;
+}
+
+h4{
+	color: rgb(56, 56, 56);
+}
 
 .campos{
 	display: flex;
@@ -88,46 +85,13 @@ form{
 }
 
 .campos input{
-	text-decoration: none;
 	border: 2px solid #FFB1B1;
 	height: 44px;
 	border-radius: 18px;
 	font-size: 1em;
+	padding: 20px;
 }
 
-.esquerda_cima {
-	background-color: #CA9CD6;
-	border: solid 5px;
-	border-color: white;
-
-	border: solid;
-}
-		
-.direita_cima {
-	background-color: #9CCAD6;
-	border: solid 5px;
-	border-color: white;
-
-	border: solid;
-	
-
-}
-
-.esquerda_baixo {
-	background-color: #FAB8B6;
-	border: solid 5px;
-	border-color: white;
-
-	border: solid;	
-}
-
-.direita_baixo {
-	background-color: #B5F7CF;
-	border: solid 5px;
-	border-color: white;
-	border: solid;
-}
-		
         
 .vitrine {
 	border-color: white;
