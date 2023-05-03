@@ -3,19 +3,16 @@
 
 header{
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    padding: 0 5%;
     background: #FFADAD;
 }
 
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     background-color: #FFF5F5;
-    border: 1px solid #FFD6D6;
-    border-radius: 10px;
+    border-radius: 2px;
+    width: 20vw;
 }
 
 .logo img{
@@ -26,28 +23,18 @@ header{
 
 header nav{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 70%;
+    align-items: center;
     margin: 15px;
-}
-
-.menu{
     width: 100%;
 }
 
-.up {
-    display: flex;
-    justify-content: space-between;
-}
 
 .search {
     display: flex;
     position: relative;
     width: 50%;
 }
-
 .srcIn{
     width: 100%;
     border: 2px solid #FF7373;
@@ -55,12 +42,9 @@ header nav{
     padding: 2px;
     transition: ease .3s;
 }
-
 .srcIn:focus{
     border: 2px solid #c24242;
 }
-
-
 .srcIcon{
     position: absolute;
     top: 50%;
@@ -73,11 +57,31 @@ header nav{
     color: #FF7373;
     transition: ease .3s;
 }
-
 .srcIn:focus ~ .srcIcon{
     color: #c24242;
     border-left-color: #c24242;
 }
+
+
+.menu, .itensMenu, .itensMenu div{
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.itensMenu{
+    gap: 1.5rem;
+
+}
+.itensMenu div:first-child img, .itensMenu div:nth-child(2) i:first-child{
+    margin-right: 5px; 
+    font-size: 1.5em;
+}
+.userIcon{
+    width: 40px;
+    height: auto;
+}
+
 
 
 .btns {
@@ -96,22 +100,3 @@ header nav{
 }
 
 
-.btns a:hover{
-    background-color: #c24242;
-}
-
-.down ul{
-    display: flex;
-    gap: 5px;
-    justify-content: flex-end;
-}
-
-.down ul li a{
- color: #280D00;
- padding: 10px;
-}
-
-.down ul li:first-child {
-    border-right: 2px solid #280D00;
-    padding-right: 5px;
-}
