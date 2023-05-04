@@ -16,7 +16,7 @@ header{
 }
 
 .logo img{
-    width: 10vw;
+    width: 7vw;
     height: auto;
     padding: 10px;
 }
@@ -41,6 +41,7 @@ header nav{
     font-size: 1.5em;
     padding: 2px;
     transition: ease .3s;
+    outline: none;
 }
 .srcIn:focus{
     border: 2px solid #c24242;
@@ -63,11 +64,19 @@ header nav{
 }
 
 
-.menu, .itensMenu, .itensMenu div{
+.itensMenu, .itensMenu div{
     color: #FAFAFA;
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: .5s ease;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35vw;
 }
 .itensMenu{
     gap: 1.5rem;
@@ -82,21 +91,20 @@ header nav{
     height: auto;
 }
 
-
-
-.btns {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.btns a{
-    font-size: 1.1em;
-    padding: 7px 35px;
-    background: #FF7373;
-    border-radius: 50px;
-    color: #FFF5F5;
-    transition: all ease-in-out .5s;
+.iconsMenu{
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.8em;
+    color: #FAFAFA;
 }
 
 
+.iconsMenu .i{
+    cursor: pointer;
+    padding: 2px;
+    transition: .5s ease;
+}
+
+.iconsMenu .i:hover, .itensMenu div:hover{
+    opacity: .5;
+}
