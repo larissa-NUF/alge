@@ -62,14 +62,17 @@ header nav{
 }
 
 
-.itensMenu, .itensMenu div{
+.itensMenu, .itensMenu div, .dropBtn{
     color: #FAFAFA;
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: .5s ease;
 }
-
+.dropBtn{
+    background-color: transparent;
+    border: none;
+}
 .menu{
     display: flex;
     align-items: center;
@@ -80,7 +83,7 @@ header nav{
     gap: 1.5rem;
 
 }
-.itensMenu div:first-child img, .itensMenu div:nth-child(2) i:first-child{
+.itensMenu div:nth-child(2) i:first-child, .dropBtn img{
     margin-right: 5px; 
     font-size: 1.5em;
 }
@@ -103,6 +106,6 @@ header nav{
     transition: .5s ease;
 }
 
-.iconsMenu .i:hover, .itensMenu div:hover{
+.iconsMenu .i:hover, .itensMenu div:hover, .dropBtn:hover{
     opacity: .5;
 }
