@@ -18,9 +18,7 @@ window.onclick = function(event) {
   const dropdown = document.getElementById("myDropdown")
 
 
-  const showDropdown = (a) => {
-    a.classList.toggle("show")
+  const showDropdown = () => {
+    dropdown.classList.toggle("show")
   }
 
-
-  showDropdown(dropdown)
