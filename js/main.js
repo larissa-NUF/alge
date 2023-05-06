@@ -10,3 +10,17 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
   }
+
+
+  /*  Dropdown  */
+
+
+  const dropdown = document.getElementById("myDropdown")
+
+
+  const showDropdown = (a) => {
+    a.classList.toggle("show")
+  }
+
+
+  showDropdown(dropdown)

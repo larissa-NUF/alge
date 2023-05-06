@@ -109,3 +109,10 @@ header nav{
 .iconsMenu .i:hover, .itensMenu div:hover, .dropBtn:hover{
     opacity: .5;
 }
+
+/*  Dropdown    */
+
+#myDropdown{
+    display: none;
+    flex-direction: column;
+}
