@@ -15,10 +15,17 @@ window.onclick = function(event) {
   /*  Dropdown  */
 
 
-  const dropdown = document.getElementById("myDropdown")
+const dropdown = document.getElementById("myDropdown")
 
-
-  const showDropdown = () => {
+/* Chama uma função que alterna a classe show */
+const showDropdown = () => {
     dropdown.classList.toggle("show")
-  }
+}
 
+/* Função que serve para que quando o alvo não for o Dropdown, o Dropdown tem seu display mudado para none */
+
+window.onclick = (event) => {
+  if (event.target == dropdown) {
+    dropdown.classList.remove('show');
+  }
+}

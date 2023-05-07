@@ -53,3 +53,7 @@ img{
 body{
 	font-family: 'Inter', sans-serif;
 }
+
+*{
+	outline: none;
+}

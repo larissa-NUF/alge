@@ -62,18 +62,10 @@ header nav{
 }
 
 
-/* .itensMenu, .itensMenu div:not(.dropdown-container), .dropBtn{
-    color: #FAFAFA;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: .5s ease;
-} */
-
 .menu{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 35vw;
     gap: 1.5rem;
 }
@@ -81,6 +73,9 @@ header nav{
 .menu div:not(.dropdown-container), .dropBtn{
     display: flex;
     align-items: center;
+    color: #FAFAFA;
+    cursor: pointer;
+    transition: .5s ease;
 }
 
 .menu div:nth-child(2) i:first-child, .dropBtn img{
@@ -106,7 +101,7 @@ header nav{
     transition: .5s ease;
 }
 
-.iconsMenu .i:hover, .itensMenu div:not(.dropdown-container):hover, .dropBtn:hover{
+.iconsMenu .i:hover, .menu div:not(.dropdown, .dropdown-container):hover, .dropBtn:hover{
     opacity: .5;
 }
 
@@ -131,7 +126,6 @@ header nav{
     z-index: 1;
     display: none;
     flex-direction: column;
-    gap: 10px;
     background-color: #f1f1f1;
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -140,6 +134,10 @@ header nav{
     text-align: center;
 }
 
+.dropdown-container a{
+    padding: 5px;
+    transition: .5s ease;
+}
 .dropdown-container a:hover{
     background-color: #9b9b9b;
 }
