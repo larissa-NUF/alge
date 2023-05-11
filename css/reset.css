@@ -52,6 +52,12 @@ img{
 
 body{
 	font-family: 'Inter', sans-serif;
+	background: #f6dede66;
+}
+
+h1{
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 *{

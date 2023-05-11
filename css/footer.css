@@ -1,10 +1,12 @@
 /*  FOOTER  */
 
 .footer{
+    position: relative;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F1A8A8;
+    background-color: #FFADAD /*#F1A8A8*/;
     height: 20vh;
     color: #D24242;
 }
