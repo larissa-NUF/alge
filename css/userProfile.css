@@ -1,0 +1,99 @@
+body{
+    background-color: #F6DEDE66;
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar{
+    background-color: #FDE6E6;
+    width: 16em;
+    height: 100vh;
+    padding: 3.313em 1.375em 1.375em 1.375em;
+    position: fixed;
+}
+
+.item{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.item div{
+    width: 1.5em;
+}
+.item p{
+    margin-left: 10px;
+}
+
+.menu-item{
+    color: #280D00;
+}
+
+.item i{
+    color: #FFADAD;
+}
+
+.container{
+    margin-left: 4em;
+    align-items: center;
+    width: 100%;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+.usuario, .opcoes{
+    max-width: 45em;
+    width: 45em;
+    background-color: #ffffff;
+    min-height: 7em;
+    border-radius: 10px;
+    padding: 2em 2.2em;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+  
+}
+
+.opcoes{
+    margin-top: 3em;  
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.dados, .endereco{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    color: #280D00;
+}
+
+.usuario p, .opcoes p{
+    padding-left: 22px;
+}
+
+.usuario p{
+    font-size: 1.5em;
+}
+
+.opcoes .icon{
+    color: #D24242;
+}
+
+.foto,.opcoes div .icon{
+    height: 4.5em;
+    width: 4.5em;
+    border: solid 2px #F6DEDE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta{
+    margin-left: auto;
+    color: #aaaaaa;
+}

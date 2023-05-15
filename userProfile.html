@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="stylesheet" href="bootstrap-css/bootstrap.css">
     <link rel="stylesheet" href="css/userProfile.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Perfil</title>
 </head>
 <body>
 
-    f
-    <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
-    <script src="bootstrap-js/bootstrap.js"></script>    
+    <div class="sidebar" id="sidebar">
+        <div class="item menu-item" id="menu"><div><i class="fa-solid fa-bars" width="1.375em"></i></div> <p>Minha Conta</p></div>
+        <div class="item"><div><i class="fa-regular fa-user" width="1.375em"></i></div> <p>Meu Perfil</p></div>
+        <div class="item"><div><i class="far fa-truck" width="1.375em"></i></div> <p>Pedidos</p></div>
+        <div class="item"><div><i class="fa-regular fa-star" width="1.375em"></i></div> <p>Favoritos</p></div>
+    </div>
+
+    <div class="container">
+        <div class="usuario">
+            <div class="foto"></div>
+            <p>Larissa Nunes</p>
+        </div>
+        <div class="opcoes">
+            <div class="dados">
+                <div class="icon"><i class="far fa-user fa-3x"></i></div>
+                <p>Meus Dados</p>
+                <div class="seta">
+                    <i class="fa-sharp fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="endereco">
+                <div class="icon"><i class="fa-solid fa-location-dot fa-3x"></i></div>
+                <p>Endereços</p>
+                <div class="seta">
+                    <i class="fa-sharp fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script> 
+    <script src="js/userProfile.js"></script>
 </body>
 </html>
