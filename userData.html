@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="bootstrap-css/bootstrap.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/userData.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/userData.css">
     <title>Perfil</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 <body>
     <header>
@@ -75,10 +77,35 @@
 
             <div class="form">
                 <form action="">
-                    <input type="text">
-                    <div>
-                        <input type="number" name="" id="">
-                        <input type="number" name="" id="">
+                    <div class="input">
+                        <input type="text" placeholder="Nome do usuário">
+                    </div>
+                    <div class="input cellphone">
+                        <input type="text" placeholder="(11) 9999-9999" id="cell">
+                        <input type="text" placeholder="(11) 9999-9999">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="CPF" id="cpf">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="CEP" id="cep">
+                    </div>
+                    <div class="input duoCampo">
+                        <input type="text" placeholder="Endereço">
+                        <input type="number" placeholder="N°">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Complemento">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Bairro">
+                    </div>
+                    <div class="input duoCampo">
+                        <input type="text" placeholder="Cidade">
+                        <input type="text" placeholder="UF">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Email">
                     </div>
                 </form>
             </div>
@@ -112,6 +139,8 @@
     -->
     
     <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
-    <script src="bootstrap-js/bootstrap.js"></script>    
+    <script src="bootstrap-js/bootstrap.js"></script>   
+    <script src="js/main.js"></script> 
+    <script src="js/form.js"></script>
 </body>
 </html>
