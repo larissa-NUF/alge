@@ -1,14 +1,82 @@
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-}
-
-.container{
+    height: 100vh;
+  }
+  
+  .container {
     width: 50%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 1em 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .input input {
+    width: 100%;
+    border: 1px solid #FFB1B1;
+    background-color: transparent;
+    padding: 8px;
+  }
+  
+  .duoCampo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .duoCampo input:first-child {
+    width: 59%;
+  }
+  
+  .duoCampo input:last-child {
+    width: 39%;
+  }
+  
+  .cellphone{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cellphone input{
+    width: 49%;
+  }
+
+
+  .alterarBtn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 1em;
+  }
+  .alterarBtn button{
+    width: 15vw;
+    height: 5vh;
+    background: #FF7373;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ::placeholder{
+    color: #BDA4A4;
+  }
