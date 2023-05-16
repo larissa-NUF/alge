@@ -88,26 +88,30 @@
                         <input type="text" placeholder="CPF" id="cpf">
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="CEP" id="cep">
+                        <input type="text" placeholder="CEP" id="cep" onblur=" consultarCep() ">
                     </div>
                     <div class="input duoCampo">
-                        <input type="text" placeholder="Endereço">
-                        <input type="number" placeholder="N°">
+                        <input type="text" placeholder="Rua" id="logradouro">
+                        <input type="number" placeholder="N°" id="numero">
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="Complemento">
+                        <input type="text" placeholder="Complemento" id="complemento">
                     </div>
                     <div class="input">
-                        <input type="text" placeholder="Bairro">
+                        <input type="text" placeholder="Bairro" id="bairro">
                     </div>
                     <div class="input duoCampo">
-                        <input type="text" placeholder="Cidade">
-                        <input type="text" placeholder="UF">
+                        <input type="text" placeholder="Cidade" id="cidade">
+                        <input type="text" placeholder="UF" id="uf">
                     </div>
                     <div class="input">
                         <input type="text" placeholder="Email">
                     </div>
+
                 </form>
+            </div>
+            <div class="alterarBtn">
+                <button> Alterar </button>
             </div>
         </div>  
     </main>

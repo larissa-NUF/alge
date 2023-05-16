@@ -57,6 +57,26 @@ main {
     width: 49%;
   }
 
+
+  .alterarBtn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 1em;
+  }
+  .alterarBtn button{
+    width: 15vw;
+    height: 5vh;
+    background: #FF7373;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   ::placeholder{
     color: #BDA4A4;
   }
