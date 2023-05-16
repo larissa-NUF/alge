@@ -11,15 +11,15 @@ body{
     position: fixed;
 }
 
-.item{
+.item, .menu-item{
     display: flex;
     margin-bottom: 1.5em;
 }
 
-.item div{
+.item div, .menu-item div{
     width: 1.5em;
 }
-.item p{
+.item p, .menu-item p{
     margin-left: 10px;
 }
 
@@ -31,10 +31,13 @@ body{
     color: #FFADAD;
 }
 
+.menu-item i{
+    color: #FFADAD;
+}
+
 .container{
     margin-left: 4em;
     align-items: center;
-    width: 100%;
     justify-items: center;
     display: flex;
     flex-direction: column;
