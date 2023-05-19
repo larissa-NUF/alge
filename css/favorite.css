@@ -1,0 +1,103 @@
+body{
+    background-color: #F6DEDE66;
+    font-family: 'Inter', sans-serif;
+}
+
+.titulo{
+    margin-top: 2.25em;
+    margin-bottom: 1.375em;
+    max-width: 49.4em;
+    width: 49.4em;
+    
+}
+
+.titulo h2{
+    font-size: 1.875em;
+    text-align: start;
+    font-weight: 600;
+    
+}
+
+.container{
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+.paginaAtual{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #D24242;
+    border-bottom: 1px solid #FFD6D6;
+    padding-bottom: 0.5em;
+}
+
+.selecaoTodos{
+    display: flex;
+}
+
+.selecionar{
+    margin-right: 0.875em;
+}
+
+.card{
+    max-width: 45em;
+    width: 45em;
+    background-color: #ffffff;
+    min-height: 7em;
+    border-radius: 10px;
+    padding: 2em 2.2em;
+    display: flex;
+    align-items: center;
+    margin-top: 1.4em;
+    flex-direction: column;
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3.125em 0 3.125em 0;
+    border-bottom: 1px solid #FFD6D6;
+}
+
+.produto img{
+    width: 7.75em;
+
+}
+
+.foto{
+    border: 2px solid #FFF5F5;
+    border-radius: 5px;
+    margin-right: 1.188em;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.descricao h3{
+    color: #D24242;
+    margin-bottom: 0.75em;
+    font-size: 1.25em;
+    font-weight: 600;
+    
+}
+
+.descricao p{
+    color: #280D00;
+    margin-bottom: 1em;
+}
+
+.descricao a{
+    color: #BBBBBB;
+}

@@ -3,54 +3,13 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
-.sidebar{
-    background-color: #FDE6E6;
-    width: 16em;
-    height: 100vh;
-    padding: 3.313em 1.375em 1.375em 1.375em;
-    position: fixed;
-    transition: all .5s ease;
-}
-
-.item, .menu-item{
-    display: flex;
-    margin-bottom: 1.5em;
-}
-
-.item div, .menu-item div{
-    width: 1.5em;
-}
-.item p, .menu-item p{
-    margin-left: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.divIcon{
-    display: flex;
-    justify-content: center;
-    width: 1.5em;
-}
-
-.menu-item{
-    color: #280D00;
-}
-
-.item i{
-    color: #FFADAD;
-}
-
-.menu-item i{
-    color: #FFADAD;
-}
-
 .container{
-    margin-left: 4em;
     align-items: center;
     justify-items: center;
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     
 }
 
@@ -83,11 +42,16 @@ body{
     color: #280D00;
 }
 
-.usuario p, .opcoes p{
+.opcoes p{
+    margin-top: 0.7em;
+    color: #9B7563;
+}
+
+.usuario p, .opcoes h3, .opcoes p{
     padding-left: 22px;
 }
 
-.usuario p{
+.usuario p, .opcoes h3{
     font-size: 1.5em;
 }
 

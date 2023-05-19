@@ -13,61 +13,7 @@
     <title>Perfil</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo da Alge">
-        </div>
-
-        <nav>
-            <div class="search">
-                <input type="text" class="srcIn">
-                <i class="fa-solid fa-magnifying-glass srcIcon"></i>
-            </div>
-
-            <div class="menu">
-                <div class="dropdown">
-                    <img src="img/user_icon.png" alt="ícone de usuário" class="userIcon">
-                    <button onclick=" showDropdown() " class="dropBtn">
-                        <p>Usuário</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                    <div class="dropdown-container" id="myDropdown">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div>
-
-                <div>
-                    <i class="fa-regular fa-star"></i>
-                <p>Favoritos</p>
-                <i class="fa-solid fa-chevron-down"></i>
-                </div>
-
-                <div>
-                    <p>Pedidos</p>
-                </div>
-            </div>
-
-
-            <div class="iconsMenu">
-                <div class="i">
-                    <i class="fa-regular fa-bell"></i>
-                </div>
-                <div class="i">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </div>
-        
-        </nav>
-    </header>
-    <div class="sidebar" id="sidebar">
-        <div class="menu-item" id="menu"><div class="divIcon"><i class="fa-solid fa-bars" width="1.375em"></i></div> <p>Minha Conta</p></div>
-        <div class="item"><div class="divIcon"><i class="fa-regular fa-user" width="1.375em"></i></div> <p>Meu Perfil</p></div>
-        <div class="item"><div class="divIcon"><i class="fa-solid fa-truck-fast" width="1.375em"></i></div> <p>Pedidos</p></div>
-        <div class="item"><div class="divIcon"><i class="fa-regular fa-star" width="1.375em"></i></div> <p>Favoritos</p></div>
-    </div>
-
+    
     <div class="container">
         <div class="usuario">
             <div class="foto"></div>
@@ -76,21 +22,25 @@
         <div class="opcoes">
             <div class="dados">
                 <div class="icon"><i class="far fa-user fa-3x"></i></div>
-                <p>Meus Dados</p>
+                <h3>Meus Dados</h3>
                 <div class="seta">
                     <i class="fa-sharp fa-solid fa-angle-right"></i>
                 </div>
             </div>
             <div class="endereco">
                 <div class="icon"><i class="fa-solid fa-location-dot fa-3x"></i></div>
-                <p>Endereços</p>
+                <div>
+                    <h3>Endereços</h3>
+                    <p>Endereços salvos em suas contas.</p>
+                </div>
                 <div class="seta">
                     <i class="fa-sharp fa-solid fa-angle-right"></i>
                 </div>
             </div>
         </div>
     </div>
+    
     <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script> 
-    <script src="js/userProfile.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

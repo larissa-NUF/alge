@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/login.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -16,14 +15,14 @@
 		<h3><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a></h3>
 	</div>
 	<div class="formulario"> 
-		<form name="Login" class="login">
+		<form name="Login" class="login" id="loginForm">
 			<div>
 				<div class="imagem">
 					<img src ="img/profile1.png"/>
 				</div>	
 				<div class="campos">
-					<input type="text" value="" maxlength="60" required placeholder="Email:">
-					<input id="senha" type="password" value="" maxlength="20" placeholder="Senha:"><p>
+					<input name="email" id="email" type="text" value="" maxlength="60" required placeholder="Email">
+					<input name="senha" id="senha" type="password" value="" maxlength="20" placeholder="Senha:"><p>
 					
 				</div>
 				
@@ -33,17 +32,18 @@
 						<label for="lembre">Lembrar-me</label>
 					</div>
 					
-					<a href="#">  Esqueci minha senha</a>
+					<a href="#" style="color:#FF7373;">  Esqueci minha senha</a>
 				</div>
 				
 					
 				<div class="enviar"> <input id="botao" type="submit" value="ENVIAR"></div>
 			</div>
-			<div class="sem_conta"><h4> Ainda não tem conta?  <a href="singin.html">Cadastre-se</a> </h4></div>
+			<div class="sem_conta"><h4 style="color:#FF7373;"> Ainda não tem conta?  <a>Cadastre-se</a> </h4></div>
 		</form>	
 	</div>	
 
 	<script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
+	<script src="js/login.js"></script>
 
 </body>
 </html>

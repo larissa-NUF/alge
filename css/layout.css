@@ -1,3 +1,61 @@
+body{
+    overflow: hidden;
+}
+
+iframe{
+    width: calc(100% - 4em);
+    height: 100vh;
+    margin-top: 92px;
+    padding-left: 4em;
+}
+
+.sidebar{
+    background-color: #FDE6E6;
+    width: 2em;
+    height: 100vh;
+    padding: 3.313em 1.375em 1.375em 1.375em;
+    position: fixed;
+    transition: all .5s ease;
+    z-index: 10;
+    margin-top: 92px;
+}
+
+.item, .menu-item{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.item div, .menu-item div{
+    width: 1.5em;
+}
+.item p, .menu-item p{
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.divIcon{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+.divIcon i{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu-item i{
+    color: #280D00;
+    width: 2em;
+}
+
+.item i{
+    color: #FFADAD;
+    width: 2em;
+}
+
 /*  MENU    */
 
 
@@ -5,16 +63,19 @@ header{
     display: flex;
     width: 100%;
     background: #FFADAD;
+    z-index: 10;
+    position: fixed;
+    height: 92px;
 }
 
 .logo{
     display: grid;
     place-items: center;
-    width: 20vw;
+    
 }
 
 .logo img{
-    width: 15vw;
+    width: 11.5em;
     height: auto;
     padding: 10px;
 }
@@ -143,4 +204,19 @@ header nav{
 
 .show{
     display: flex;
+}
+
+.showSide{
+    width: 10em;
+}
+
+.showSide ~ .container{
+    filter: blur(13px);
+}
+
+.selecionado{
+    color: #FF3232;
+}
+.selecionado i{
+    color: #FF3232;
 }
