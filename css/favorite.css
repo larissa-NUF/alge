@@ -1,22 +1,12 @@
 body{
     background-color: #F6DEDE66;
     font-family: 'Inter', sans-serif;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.titulo{
-    margin-top: 2.25em;
-    margin-bottom: 1.375em;
-    max-width: 49.4em;
-    width: 49.4em;
-    
-}
-
-.titulo h2{
-    font-size: 1.875em;
-    text-align: start;
-    font-weight: 600;
-    
-}
 
 .container{
     align-items: center;
@@ -24,22 +14,44 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
-    
-    
+    width: 80%;
 }
 
+.titulo{
+    margin-top: 2.5em;
+    margin-bottom: 1.5em; 
+    width: 100%;
+}
+
+
+
+/* .paginaAtual{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 0 0.5% 0;
+    color: #D24242;
+    border-bottom: 0.5px solid #FFD6D6;
+} */
 .paginaAtual{
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    justify-content: space-between;
     color: #D24242;
-    border-bottom: 1px solid #FFD6D6;
-    padding-bottom: 0.5em;
+    padding-top: 0.5%;
 }
+
+.paginaAtual:first-child{
+    padding-bottom: 0.5%;
+    border-bottom: 0.5px solid #FFD6D6;
+}
+
 
 .selecaoTodos{
     display: flex;
+}
+.selecaoTodos p{
+    margin-left: 10px;
 }
 
 .selecionar{
@@ -47,8 +59,7 @@ body{
 }
 
 .card{
-    max-width: 45em;
-    width: 45em;
+    width: 100%;
     background-color: #ffffff;
     min-height: 7em;
     border-radius: 10px;
