@@ -55,11 +55,29 @@ body{
 	font-family: 'Inter', sans-serif;
 	background: #f6dede66;
 	color: #280D00;
+	display: grid;
+	place-items: center;
+	max-height: 100%;
+	min-height: 90vh;
+	width: 100%;
 }
 
-h1, h2{font-weight: bold;}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5vh 0;
+	width: 90%;
+	height: 95%;
+	color: #D24242;
+}
+
+h1, h2, h3{font-weight: bold;}
 h1{font-size: 2.2em;}
 h2{font-size: 1.8em;}
+h3{font-size: 1.2em;}
+h4{font-size: 1.2em;}
 
 *{
 	outline: none;

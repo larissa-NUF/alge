@@ -9,13 +9,15 @@
     <title>Cadastro</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 <body>
     <div class="menu">
 		<h3><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a></h3>
 	</div>
     
-    <div class="container">
+    <main class="container">
         <div class="register-box">
             <Span class="registra">Registre-se</Span>
             <input type="text" placeholder="Nome" class="campo">
@@ -25,7 +27,7 @@
             </div>
             <input type="text" placeholder="CPF" class="campo" id="cpf">
 
-            <input type="text" placeholder="CEP" class="campo" id="cep">
+            <input type="text" placeholder="CEP" class="campo" id="cep" onblur=" consultarCep() ">
             <div>
                 <input type="text" placeholder="Endereço" class="campo endereço">
                 <input type="text" placeholder="Nº" class="campo numberHouse">
@@ -42,11 +44,11 @@
             <input type="password" placeholder="Confirmar Senha" class="campo senha">
             <button><span>Cadastrar</span></button>
         </div>
-    </div>
+    </main>
     
-        <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
 
-        <script src="js/form.js"></script>
+    <script src="js/form.js"></script>
  
 </body>
 </html>

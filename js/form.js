@@ -17,7 +17,7 @@ function consultarCep () {
 
     request.open('GET', url);
     request.onerror = (e) => {
-        alert('API Offline ou CEP inválido');
+        console.log('API Offline ou CEP inválido');
     }
 
     request.onload = () => {

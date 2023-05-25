@@ -1,8 +1,4 @@
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
+body{
     background: linear-gradient(90deg, #FFD6D6 0%, rgba(252, 209, 209, 0.6) 24.48%, rgba(252, 215, 215, 0.28) 60.42%, #FFFFFF 100%);
 }
 
@@ -24,7 +20,6 @@
 .campo{
     width: 100%;
     height: 44px;
-    padding-left: 20px;
 
     background: #FFFFFF;
     border: 1px solid #FFB1B1;
@@ -74,6 +69,8 @@ button span{
 }
 
 .menu{
+    position: absolute;
+    top: 0;
 	text-decoration: none;
 	width: 100%;
 	background: rgba(255, 173, 173, 0.5);

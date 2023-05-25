@@ -1,11 +1,5 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
-img{
-    -webkit-user-drag: none;
-    pointer-events: all;
-}
 
 
 
@@ -13,8 +7,6 @@ img{
 
 
 .container {
-
-    margin: 5vh 10vw;
     display: flex;
     flex-direction: column;
     gap: 10vh;

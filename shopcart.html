@@ -15,130 +15,56 @@
     <link rel="stylesheet" href="css/shopcart.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo_urso.png" alt="Logo da Alge">
-        </div>
-
-        <nav>
-            <div class="search">
-                <input type="text" class="srcIn">
-                <i class="fa-solid fa-magnifying-glass srcIcon"></i>
-            </div>
-
-            <div class="menu">
-                <div class="itensMenu">
-
-
-                    <div>
-                        <img src="img/user_icon.png" alt="ícone de usuário" class="userIcon">
-                        <p>Usuário</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-    
-                    <div>
-                        <i class="fa-regular fa-star"></i>
-                        <p>Favoritos</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-    
-                    <div>
-                        <p>Pedidos</p>
-                    </div>
-                </div>
-
-                <div class="iconsMenu">
-                    <div class="i">
-                        <i class="fa-regular fa-bell"></i>
-                    </div>
-
-                    <div class="i">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
+    <main class="container">
         
-    </header>
-
-    <main>
-        <div class="container">
-            <h1>Carrinho</h1>
-
-            <div class="table">
-                <div class="items tableHeader"></div>
-                <div class="items tableHeader"><h4>Quantidade</h4></div>
-                <div class="items tableHeader"><h4>Preço</h4></div>
-
-                <div class="items">
-                    <img src="img/caneca_ex.png">
-                    <p>Caneca Coração - Porcelana - 300ml</p>
-                </div>
-                <div class="items item-center">
-                    <input type="number" class="input_qtd">
-                    <a href="#" class="link_shopping">Excluir</a>
-                </div>
-                <div class="items item-center">
-                    <p>R$ 29.99</p>
-                </div>
-
-                <div class="items">
-                    <img src="img/pelucia_ex.png">
-                    <p>Ursinho com olhar assustador com carinho</p>
-                </div>
-                <div class="items item-center">
-                    <input type="number" class="input_qtd">
-                    <a href="#" class="link_shopping">Excluir</a>
-                </div>
-                <div class="items item-center">
-                    <p>R$ 29,99</p>
-                </div>
+        <h1>Carrinho</h1>
+        <div class="table">
+            <div class="items tableHeader"></div>
+            <div class="items tableHeader">
+                <h4>Quantidade</h4>
             </div>
-
-            <div class="total">
-                <div class="total-container">
-                    <div>
-                        <p>Subtotal</p>
-
-                        <a href="#" class="link_shopping">Comprar mais produtos</a>
-                    </div>
-
-                    <div>
-                        <p>
-                            Resultado da compra
-                        </p>
-
-                        <button>Continuar</button>
-                    </div>
+            <div class="items tableHeader">
+                <h4>Preço</h4>
+            </div>
+            <div class="items">
+                <img src="img/caneca_ex.png">
+                <p>Caneca Coração - Porcelana - 300ml</p>
+            </div>
+            <div class="items item-center">
+                <input type="number" class="input_qtd">
+                <a href="#" class="link_shopping">Excluir</a>
+            </div>
+            <div class="items item-center">
+                <p>R$ 29.99</p>
+            </div>
+            <div class="items">
+                <img src="img/pelucia_ex.png">
+                <p>Ursinho com olhar assustador com carinho</p>
+            </div>
+            <div class="items item-center">
+                <input type="number" class="input_qtd">
+                <a href="#" class="link_shopping">Excluir</a>
+            </div>
+            <div class="items item-center">
+                <p>R$ 29,99</p>
+            </div>
+        </div>
+        
+        <div class="total">
+            <div class="total-container">
+                <div>
+                    <h3>Subtotal</h3>
+                    <a href="#" class="link_shopping">Comprar mais produtos</a>
+                </div>
+                <div>
+                    <h3>
+                        Resultado da compra
+                    </h3>
+                    <button>Continuar</button>
                 </div>
             </div>
         </div>
     </main>
-
-
-    <footer class="footer"> 
-        <div class="footer-container">
-            <div class="icons">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-
-            <div class="footer-text">
-                <p>
-                    ALGE M.E. | CNPJ: 00.000.000.0001-00
-                </p>
-                <p>
-                    RUA. ONIVALDO VANDERLEI DIONISIO, 112 - NOVA MAUÁ, MAUÁ  - SP, - 09390-685
-                </p>
-                <p>Copyright © 2023 - Todos os direitos reservados</p>
-
-            </div>
-        </div>
-    </footer>
 
 
     <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
