@@ -112,3 +112,14 @@ body{
 .descricao a{
     color: #BBBBBB;
 }
+
+
+.pagination{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.pagination a{
+    font-size: 1.3em;
+}
