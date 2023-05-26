@@ -12,8 +12,6 @@ body{
     padding: 50px 30px;
     border: 6px solid #FF9D9D;
     backdrop-filter: blur(2px);
-    /* Note: backdrop-filter has minimal browser support */
-    
     border-radius: 21px;
 }
 
