@@ -117,9 +117,14 @@ body{
 .pagination{
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
 }
 
 .pagination a{
     font-size: 1.3em;
+    color: #280D00;
+}
+
+.pagination a:active{
+    color: #701b1b;
 }

@@ -6,63 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/userData.css">
     <title>Perfil</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 </head>
 <body>
-    <main>
-        <div class="container">
+    <main class="container">
+    
+        <div class="title">
             <h1>
                 Meus dados
             </h1>
-
             <p>
                 Alterar dados pessoais
             </p>
+        </div>
 
-            <div class="form">
-                <form action="">
-                    <div class="input">
-                        <input type="text" placeholder="Nome do usuário">
-                    </div>
-                    <div class="input cellphone">
-                        <input type="text" placeholder="(11) 9999-9999" id="cell">
-                        <input type="text" placeholder="(11) 9999-9999">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="CPF" id="cpf">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="CEP" id="cep" onblur=" consultarCep() ">
-                    </div>
-                    <div class="input duoCampo">
-                        <input type="text" placeholder="Rua" id="logradouro">
-                        <input type="number" placeholder="N°" id="numero">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="Complemento" id="complemento">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="Bairro" id="bairro">
-                    </div>
-                    <div class="input duoCampo">
-                        <input type="text" placeholder="Cidade" id="cidade">
-                        <input type="text" placeholder="UF" id="uf">
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="Email">
-                    </div>
-
-                </form>
-            </div>
-            <div class="alterarBtn">
-                <button> Alterar </button>
-            </div>
-        </div>  
+        <div class="form">
+            <form action="">
+                <div class="input">
+                    <input type="text" placeholder="Nome do usuário">
+                </div>
+                <div class="input cellphone">
+                    <input type="text" placeholder="(11) 9999-9999" id="cell">
+                    <input type="text" placeholder="(11) 9999-9999">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="CPF" id="cpf">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="CEP" id="cep" onblur=" consultarCep() ">
+                </div>
+                <div class="input duoCampo">
+                    <input type="text" placeholder="Rua" id="logradouro">
+                    <input type="number" placeholder="N°" id="numero">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Complemento" id="complemento">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Bairro" id="bairro">
+                </div>
+                <div class="input duoCampo">
+                    <input type="text" placeholder="Cidade" id="cidade">
+                    <input type="text" placeholder="UF" id="uf">
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Email">
+                </div>
+            </form>
+        </div>
+        <div class="alterarBtn">
+            <button> Alterar </button>
+        </div>
+    
     </main>
 
     

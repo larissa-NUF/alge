@@ -6,11 +6,19 @@ main {
   }
   
   .container {
-    width: 50%;
+    width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 2em;
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: rgb(19, 18, 18);
+    gap: 1.2em;
   }
   
   .form {
@@ -19,7 +27,8 @@ main {
     border: none;
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 1em 0;
+    padding: 1.5em 1em;
+    width: 100%;
   }
   
   form {
@@ -29,7 +38,7 @@ main {
   }
   
   .input input {
-    width: 100%;
+    width: 95%;
     border: 1px solid #FFB1B1;
     background-color: transparent;
     padding: 8px;
@@ -41,11 +50,11 @@ main {
   }
   
   .duoCampo input:first-child {
-    width: 59%;
+    width: 55%;
   }
   
   .duoCampo input:last-child {
-    width: 39%;
+    width: 30%;
   }
   
   .cellphone{
@@ -54,7 +63,7 @@ main {
   }
   
   .cellphone input{
-    width: 49%;
+    width: 40%;
   }
 
 
@@ -75,6 +84,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s linear;
+  }
+
+  .alterarBtn button:hover{
+    background: #9e4545;
+    cursor: pointer;
   }
 
   ::placeholder{

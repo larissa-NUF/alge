@@ -1,8 +1,11 @@
+.container{
+  justify-content: space-evenly;
+}
 
 .table{
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 20% 30.5%;
+    grid-template-columns: 50% 30% 20%;
     grid-auto-rows: auto;
     border: 6px solid #FFD6D6;
     border-radius: 10px;
@@ -13,7 +16,6 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    width: 100%;
   }
 
   .items:nth-child(4),
@@ -66,8 +68,9 @@
   margin: 5vh 0;
   width: 100%;
   height: 200px;
-  padding: 40px;
+  padding: 40px 0;
   background-color: #FFD6D6;
+  border-radius: 5px;
 }
 
 .total-container{
