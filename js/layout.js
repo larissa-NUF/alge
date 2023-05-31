@@ -33,6 +33,7 @@ let paginasBtn = [
     {btn: "btnSobre", pagina: "about"},
     {btn: "btnCarrinho", pagina: "shopcart"},
     {btn: "btnCriarConta", pagina: "singin"},
+    {btn: "btnLogo", pagina: "showcase"},
 ];
 
 paginasBtn.forEach(element => {
