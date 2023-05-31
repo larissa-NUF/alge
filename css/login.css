@@ -1,27 +1,14 @@
-.login{
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
-.login-container{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background: pink; /*	tirei fundo gradiente porque não ficou agradavel no modal, por isso retirei, favor alguém (provavelmente eu ou a Larissa) troque a cor depois	*/
-	width: 60vw;
-	height: 60vh;
-	max-width: 40%;
-	border-radius: 3px;
+body{
 	display: flex;
 	flex-direction: column;
-	gap: 2.5rem;
+	background: linear-gradient(90deg, #FFD6D6 0%, rgba(252, 209, 209, 0.6) 24.48%, rgba(252, 215, 215, 0.28) 60.42%, #FFFFFF 100%);
+}
+.login-container{
+	width: 100%;
+	height: calc(100vh - 20px - 1.3em);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 a{
 	color:#FF7373;
@@ -35,15 +22,15 @@ a{
 	border-bottom: 2px solid #FFB1B1;
 }
 
-.menu h3{
+.voltar h3{
 	padding: 10px;
 }
 
-.menu h3 a{
+.voltar h3 a{
 	color: rgb(12, 12, 12);
 }
 
-.menu h3 a:hover{
+.voltar h3 a:hover{
 	text-decoration: underline;
 }
 	
@@ -52,6 +39,13 @@ a{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	max-width: 40%;
+	border-radius: 3px;
+	gap: 2.5rem;
+	border-radius: 44px;
+	padding: 2em;
+	border: 6px solid #FF9D9D;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .form{
@@ -109,7 +103,7 @@ h4{
 	height: 44px;
 	border-radius: 18px;
 	font-size: 1em;
-	padding: 20px;
+	padding-left: 20px;
 }
 
         
