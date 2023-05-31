@@ -8,6 +8,8 @@ loginForm.addEventListener("submit", function(event, params) {
 
     let email = loginForm.email.value
 
-    sessionStorage.setItem("login", email);
+    localStorage.setItem("login", email);
+    localStorage.setItem("user", true);
+    window.location.href = "index.html";
 
 })
