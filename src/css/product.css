@@ -1,7 +1,6 @@
 .produtos-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: white;
     width: 90%;
     padding: 1.5em;
@@ -12,14 +11,27 @@
     width: 80%;
 }
 
-.produto > div{
+.left{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
     border-bottom: 2px solid #FFD6D6;
 }
 
-.produto > div > div{
+.itens {
+    display: flex;
+    flex-direction: column;
+}
+
+.itens > div:first-child{
+    background-color: #FBF1F1;
+}
+
+.itens > div:last-child{
+    background-color: #FFD6D6;
+    font-size: 1.5em;
+}
+
+.left .itens > div{
     border: 2px solid #FFD6D6;
     width: 40px;
     height: 40px;
@@ -28,23 +40,19 @@
     border-radius: 8px;
 }
 
-.produto > div > div:first-child{
-    background-color: #FBF1F1;
-}
 
-.produto > div > div:last-child{
-    background-color: #FFD6D6;
-    font-size: 1.5em;
-}
-
-.produto > div > div img{
+.itens div img{
     width: 90%;
     height: auto;
     border-radius: 12px;
 }
 
 .produto img{
-    width: 30%;
+    width: 40%;
     height: auto;
     border: 2px solid #FFF5F5;
+}
+
+.informacoes{
+    border: 2px solid #FFD6D6;
 }
