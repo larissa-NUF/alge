@@ -7,18 +7,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/showcase.css">
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/showcase.css">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <title>Inicio - Alge</title>
 </head>
 <body>
+    <div class="alinhamentoFiltro">
+        <div class="filtros">
+            <div class="filtro">
+                <a href="#" id="madeira">
+                    <input type="checkbox">
+                        Madeira
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <iframe src="../component/filtroDropdown/filtroDropdown.html" frameborder="0" class="dropdown"></iframe>
+                </a>
+            </div>
+            <div class="filtro">
+                <a href="#" id="pelucia">
+                    <input type="checkbox">
+                        Pelúcias
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <iframe src="../component/filtroDropdown/filtroDropdown.html" frameborder="0" class="dropdown"></iframe>
+                </a>
+                
+            </div>
+            <div class="filtro">
+                <a href="#" id="caneca">
+                    <input type="checkbox">
+                        Canecas
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <iframe src="../component/filtroDropdown/filtroDropdown.html" frameborder="0" class="dropdown"></iframe>
+                </a>
+            </div>
+        </div>
+    </div>
     <main class="container">
         <h2 class="titulo">Mais vendidos</h2>
         <section class="itens">
             <div class="itens_row">
                 <div class="item">
-                    <div class="itemImagem"><img src="img/MicrosoftTeams-image (14).png" alt=""></div>
+                    <div class="itemImagem"><img src="../img/MicrosoftTeams-image (14).png" alt=""></div>
                     <div class="detalhes">
                         <h3 class="preco">R$ 15,00</h3> 
                         <p class="dt">Entrega rápida</p>
@@ -26,7 +55,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="itemImagem"><img src="img/MicrosoftTeams-image (15).png" alt=""></div>
+                    <div class="itemImagem"><img src="../img/MicrosoftTeams-image (15).png" alt=""></div>
                     <div class="detalhes">
                         <h3 class="preco">R$ 15,00</h3> 
                         <p class="dt">Entrega rápida</p>
@@ -34,7 +63,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="itemImagem"><img src="img/MicrosoftTeams-image (16).png" alt=""></div>
+                    <div class="itemImagem"><img src="../img/MicrosoftTeams-image (16).png" alt=""></div>
                     <div class="detalhes">
                         <h3 class="preco">R$ 15,00</h3> 
                         <p class="dt">Entrega rápida</p>
@@ -44,7 +73,7 @@
             </div>
             <div class="itens_row">
                 <div class="item">
-                    <div class="itemImagem"><img src="img/MicrosoftTeams-image (17).png" alt=""></div>
+                    <div class="itemImagem"><img src="../img/MicrosoftTeams-image (17).png" alt=""></div>
                     <div class="detalhes">
                         <h3 class="preco">R$ 15,00</h3> 
                         <p class="dt">Entrega rápida</p>
@@ -53,7 +82,7 @@
                 </div>
 
                 <div class="item">
-                    <div class="itemImagem"><img src="img/MicrosoftTeams-image (18).png" alt=""></div>
+                    <div class="itemImagem"><img src="../img/MicrosoftTeams-image (18).png" alt=""></div>
                     <div class="detalhes">
                         <h3 class="preco">R$ 15,00</h3> 
                         <p class="dt">Entrega rápida</p>
@@ -61,7 +90,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="itemImagem"><img src="img/MicrosoftTeams-image (19).png" alt=""></div>
+                    <div class="itemImagem"><img src="../img/MicrosoftTeams-image (19).png" alt=""></div>
                     <div class="detalhes">
                         <h3 class="preco">R$ 15,00</h3> 
                         <p class="dt">Entrega rápida</p>
@@ -83,7 +112,7 @@
                         <form name="Login" class="form">
                             <div>
                                 <div class="imagem">
-                                    <img src ="img/profile1.png"/>
+                                    <img src ="../img/profile1.png"/>
                                 </div>	
                                 <div class="campos">
                                     <input type="text" value="" maxlength="60" required placeholder="Email:">
@@ -114,6 +143,6 @@
 
    
     <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

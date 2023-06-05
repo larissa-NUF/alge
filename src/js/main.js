@@ -29,3 +29,13 @@ window.onclick = (event) => {
     dropdown.classList.remove('show');
   }
 }
+
+let btn = ["caneca", "madeira", "pelucia"];
+
+btn.forEach(element => {
+  let item = document.getElementById(element);
+  
+  item.addEventListener('click', function(){
+    item.getElementsByTagName('iframe')[0].classList.toggle('show');
+  })
+});

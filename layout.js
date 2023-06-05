@@ -19,7 +19,7 @@ let paginas = ["userProfile", "request", "favorite"];
 paginas.forEach(element => {
     let item = document.getElementById(element)
     item.addEventListener("click", function(){
-        tela.src = element + ".html";
+        tela.src = "src/page/" + element + ".html";
         item.classList.add('selecionado'); 
         sidebar.classList.remove('showSide');  
 
@@ -39,7 +39,7 @@ let paginasBtn = [
 paginasBtn.forEach(element => {
     let item = document.getElementById(element.btn)
     item.addEventListener("click", function(){
-        tela.src = element.pagina + ".html";
+        tela.src = "src/page/", element.pagina + ".html";
         if (element.funcao) element.funcao()
     })
 });
@@ -52,7 +52,7 @@ sidebar.onblur = function() {
 btnSair.addEventListener("click", () => { 
     localStorage.setItem("user", false); 
     statusUser(); 
-    tela.src = "showcase.html";
+    tela.src = "src/page/showcase.html";
 })
 
 function statusUser(){
