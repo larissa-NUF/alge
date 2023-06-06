@@ -6,6 +6,36 @@ let logado = document.getElementsByClassName("logado")[0];
 let deslogado = document.getElementsByClassName("deslogado")[0];
 let userProfile = document.getElementById("userProfile");
 
+const openModal = ()=> {
+    modal.style.display = "block"
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+
+  /*  Dropdown  */
+
+
+const dropdown = document.getElementById("myDropdown")
+
+/* Chama uma função que alterna a classe show */
+const showDropdown = () => {
+    dropdown.classList.toggle("show")
+}
+
+/* Função que serve para que quando o alvo não for o Dropdown, o Dropdown tem seu display mudado para none */
+
+window.onclick = (event) => {
+  if (event.target == dropdown) {
+    dropdown.classList.remove('show');
+  }
+}
+
+
 let user = localStorage.getItem("user");
 console.log(user)
 if (user != 'false') statusUser()
@@ -34,13 +64,18 @@ let paginasBtn = [
     {btn: "btnCarrinho", pagina: "shopcart"},
     {btn: "btnCriarConta", pagina: "singin"},
     {btn: "btnLogo", pagina: "showcase"},
+    {btn: "btnPerfil", pagina: "userData"},
+    {btn: "btnIconCarrinho", pagina: "shopcart"},
+    {btn: "btnVer1", pagina: "product"},
+    {btn: "btnVer2", pagina: "product"},
+    {btn: "btnVer3", pagina: "product"},
+    
 ];
 
 paginasBtn.forEach(element => {
     let item = document.getElementById(element.btn)
     item.addEventListener("click", function(){
-        tela.src = "src/page/", element.pagina + ".html";
-        if (element.funcao) element.funcao()
+        tela.src = `src/page/${element.pagina}.html`;
     })
 });
 
@@ -62,3 +97,6 @@ function statusUser(){
     sidebar.classList.toggle('ddShow'); 
     tela.classList.toggle('ddTela'); 
 }
+
+let modal = document.querySelector('.login')
+
