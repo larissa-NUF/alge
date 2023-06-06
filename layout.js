@@ -18,13 +18,9 @@ const showDropdown = () => {
 
 /* Função que serve para que quando o alvo não for o Dropdown, o Dropdown tem seu display mudado para none */
 
-window.onclick = (event) => {
-    if (event.target != dropdown && event.target != document.getElementById("btnDU") && event.target != document.getElementById("btnDU").querySelector('p')) {
-    console.log(event.target)
+function fechar(){
     dropdown.classList.remove('show');
-  }
 }
-
 
 let user = localStorage.getItem("user");
 console.log(user)
