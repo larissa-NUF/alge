@@ -6,21 +6,10 @@ let logado = document.getElementsByClassName("logado")[0];
 let deslogado = document.getElementsByClassName("deslogado")[0];
 let userProfile = document.getElementById("userProfile");
 
-const openModal = ()=> {
-    modal.style.display = "block"
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-
   /*  Dropdown  */
 
 
-const dropdown = document.getElementById("myDropdown")
+let dropdown = document.getElementById("myDropdown")
 
 /* Chama uma função que alterna a classe show */
 const showDropdown = () => {
@@ -30,7 +19,8 @@ const showDropdown = () => {
 /* Função que serve para que quando o alvo não for o Dropdown, o Dropdown tem seu display mudado para none */
 
 window.onclick = (event) => {
-  if (event.target == dropdown) {
+    if (event.target != dropdown && event.target != document.getElementById("btnDU") && event.target != document.getElementById("btnDU").querySelector('p')) {
+    console.log(event.target)
     dropdown.classList.remove('show');
   }
 }
@@ -73,17 +63,20 @@ let paginasBtn = [
 ];
 
 paginasBtn.forEach(element => {
-    let item = document.getElementById(element.btn)
-    item.addEventListener("click", function(){
-        tela.src = `src/page/${element.pagina}.html`;
-    })
+    let item = document.getElementById(element.btn);
+    if(item){
+        item.addEventListener("click", function(){
+            tela.src = `src/page/${element.pagina}.html`;
+        })
+    }
+    
 });
 
 
 sidebar.onblur = function() {
     sidebar.classList.remove('showSide');
 }
-
+let btnSair = document.getElementById('btnSair');
 btnSair.addEventListener("click", () => { 
     localStorage.setItem("user", false); 
     statusUser(); 

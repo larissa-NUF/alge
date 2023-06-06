@@ -5,7 +5,8 @@ $(document).ready(()=>{
     $("#cell").mask("(99) 99999-9999");
 })
 
-function consultarCep () {
+function consultarCep() {
+    console.log('oi')
     let cep = document.getElementById("cep").value;
     let logradouro = document.getElementById("logradouro");
     let bairro = document.getElementById("bairro");
