@@ -10,6 +10,6 @@ loginForm.addEventListener("submit", function(event, params) {
 
     localStorage.setItem("login", email);
     localStorage.setItem("user", true);
-    window.location.href = "index.html";
+    window.location.href = "../../index.html";
 
 })

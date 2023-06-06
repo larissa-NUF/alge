@@ -75,10 +75,12 @@
     justify-content: space-between;
     align-items: center;
     width: 70%;
+    caret-color: transparent;
 }
 
-.filtro{
+.filtro a, .filtro a:active, .filtro a:visited{
     color: #ffff;
+    cursor: pointer;
 }
 
 .alinhamentoFiltro{
@@ -96,15 +98,16 @@
     display: none;
     transform: translate(-50%, 5%);
     z-index: 1;
-    height: 18.5em;
     flex-direction: column;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 2px;
     z-index: 1;
     text-align: center;
     width: 13.5em;
+    padding: 1em;
+    text-align: start;
 }
 .drp{
     display: flex;
@@ -113,4 +116,8 @@
 
 .show{
     display: flex;
+}
+
+.dropdown label{
+    margin-bottom: 1em;
 }
