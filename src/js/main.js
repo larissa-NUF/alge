@@ -91,7 +91,6 @@ btn.forEach(element => {
         itemAttr.getAttribute('checked' ) ? 
         itemAttr.removeAttribute('checked' ) :
         itemAttr.setAttribute('checked', 'checked' )
-        
       })
     });
   }
