@@ -6,7 +6,7 @@ let logado = document.getElementsByClassName("logado")[0];
 let deslogado = document.getElementsByClassName("deslogado")[0];
 let userProfile = document.getElementById("userProfile");
 
-  /*  Dropdown  */
+/*  Dropdown  */
 
 
 let dropdown = document.getElementById("myDropdown")
@@ -23,8 +23,9 @@ function fechar(){
 }
 
 let user = localStorage.getItem("user");
-console.log(user)
-if (user != 'false') statusUser()
+/* if (user != 'false') statusUser() */
+
+!user && statusUser();
 
 menu.getElementsByTagName('i')[0].addEventListener("click",function(){
     sidebar.classList.toggle('showSide');  
@@ -38,7 +39,6 @@ paginas.forEach(element => {
         tela.src = "src/page/" + element + ".html";
         item.classList.add('selecionado'); 
         sidebar.classList.remove('showSide');  
-
         paginas.forEach(el => {
             if (element !== el) document.getElementById(el).classList.remove('selecionado');
         });
@@ -55,7 +55,6 @@ let paginasBtn = [
     {btn: "btnVer1", pagina: "product"},
     {btn: "btnVer2", pagina: "product"},
     {btn: "btnVer3", pagina: "product"},
-    
 ];
 
 paginasBtn.forEach(element => {
