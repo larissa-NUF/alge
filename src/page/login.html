@@ -18,14 +18,14 @@
 	<div class="login-container">
 		
 		<div class="formulario"> 
-			<form name="Login" class="login" id="loginForm">
+			<form name="Login" class="login" id="loginForm" method="POST" action="../api/login.php">
 				<div>
 					<div class="imagem">
 						<img src ="../img/profile1.png"/>
 					</div>	
 					<div class="campos">
-						<input name="email" id="email" type="text" value="" maxlength="60" required placeholder="Email">
-						<input name="senha" id="senha" type="password" value="" maxlength="20" placeholder="Senha:"><p>
+						<input name="email" id="email" type="text" maxlength="60" required placeholder="Email">
+						<input name="senha" id="senha" type="password" maxlength="20" placeholder="Senha:"><p>
 						
 					</div>
 					
