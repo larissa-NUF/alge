@@ -19,7 +19,7 @@ iframe{
     transition: all .5s ease;
     z-index: 10;
     margin-top: 92px;
-    display: none;
+    display: flex;
     flex-direction: column;
     
 }
@@ -278,7 +278,7 @@ nav{
 }
 
 .logado{
-    display: none;
+    display: flex;
 }
 
 .ddShow{

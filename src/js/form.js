@@ -3,6 +3,7 @@ $(document).ready(()=>{
     $("#cep").mask("99999-999");
     $("#cpf").mask("999.999.999-99");
     $("#cell").mask("(99) 99999-9999");
+    $("#tel").mask("(99) 9999-9999");
 })
 
 function consultarCep() {

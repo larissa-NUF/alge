@@ -1,19 +1,29 @@
 <?php
-
+session_start();
 include 'conexao.php';
 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = mysqli_real_escape_string($conn, $_POST['nome']);
+    $email = mysqli_real_escape_string($conn,$_POST['email']);
+}
 
 
-$query = $conn->prepare("SELECT email, senha from tb_usuario where email = ? and senha = ?");
-$query->bind_param("ss", $email, $senha)
+$query = $conn->prepare("SELECT nome, email, senha from tb_usuario where email = ? and senha = ?");
+$query->bind_param("ss", $email, $senha);
 
 if ($query->execute()){
+    $query->bind_result($nome, $email, $senha);
+    $query->fetch();
+
     echo "<script>
             alert('Usuário logado');
-            window.location.href = '../../index.html'; 
         </script>";
+
+    $_SESSION["nome"] = $nome;
+    $_SESSION["email"] = $email;
+
+    header("Location: ../../index.php");
+    exit();
 } else {
     echo "Error: " . $query->error;
 }

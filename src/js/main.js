@@ -1,5 +1,3 @@
-
-
 let btn = [{
     id: "madeira", 
     nome: 'Madeira', 
@@ -94,7 +92,4 @@ btn.forEach(element => {
       })
     });
   }
-  
 });
-
-

@@ -3,7 +3,8 @@
 $server = "localhost";
 $db = "alge_db";
 $user = "root";
-$password = "usbw";
+/* $password = "usbw"; */
+$password = "";
 
 $conn = new mysqli($server, $user, $password, $db);
 

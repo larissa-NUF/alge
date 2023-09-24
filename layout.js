@@ -1,9 +1,6 @@
 let menu = document.getElementById("menu");
 let favoritos = document.getElementById("favoritos");
 let tela = document.getElementById('tela');
-let sidebar = document.getElementById("sidebar");
-let logado = document.getElementsByClassName("logado")[0];
-let deslogado = document.getElementsByClassName("deslogado")[0];
 let userProfile = document.getElementById("userProfile");
 
 /*  Dropdown  */
@@ -21,11 +18,6 @@ const showDropdown = () => {
 function fechar(){
     dropdown.classList.remove('show');
 }
-
-let user = localStorage.getItem("user");
-/* if (user != 'false') statusUser() */
-
-!user && statusUser();
 
 menu.getElementsByTagName('i')[0].addEventListener("click",function(){
     sidebar.classList.toggle('showSide');  
@@ -64,7 +56,6 @@ paginasBtn.forEach(element => {
             tela.src = `src/page/${element.pagina}.html`;
         })
     }
-    
 });
 
 
@@ -77,14 +68,6 @@ btnSair.addEventListener("click", () => {
     statusUser(); 
     tela.src = "src/page/showcase.html";
 })
-
-function statusUser(){
-    console.log("ok", user)
-    deslogado.classList.toggle('ddNone'); 
-    logado.classList.toggle('ddShow'); 
-    sidebar.classList.toggle('ddShow'); 
-    tela.classList.toggle('ddTela'); 
-}
 
 let modal = document.querySelector('.login')
 
