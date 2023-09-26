@@ -1,10 +1,10 @@
 <?php
 
 $server = "localhost";
-$db = "alge_db";
+$db = "alge";
 $user = "root";
-/* $password = "usbw"; */
-$password = "";
+$password = "usbw";
+/* $password = ""; */
 
 $conn = new mysqli($server, $user, $password, $db);
 

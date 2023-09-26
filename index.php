@@ -1,9 +1,6 @@
 <?php
     session_start();
     include "src/api/conexao.php";
-
-    echo "<script> console.log('oi') </script>";
-
 ?>
 
 <!DOCTYPE html>
@@ -40,8 +37,7 @@
             </div>
 
             <?php 
-            
-                if (isset($_SESSION["nome"]) && isset($_SESSION["email"])){
+                if (isset($_SESSION["email"]) && isset($_SESSION["senha"])){
             ?>
             <div class='logado'>
                 <div class='menu'>
@@ -83,7 +79,7 @@
                     </ul>
                 </div>
             </div>
-            <script> console.log('Login não foi realizado') </script>";
+            <script> console.log('Login não foi realizado') </script>
             <?php 
                 }
             ?>

@@ -20,8 +20,9 @@ $stmt->bind_param("ssssssssssss", $nome, $telefone_fixo, $telefone_celular, $cpf
 if($stmt->execute()){
     echo "<script>
             alert('deu certo');
-            window.history.go(-2);
         </script>";
+        header('Location: ../../index.php');
+
 } else {
     echo "Error: " . $stmt->error;
 }

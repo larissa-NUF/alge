@@ -1,4 +1,8 @@
-
+table tbody, table thead{
+    display: grid;
+    place-items: center;
+    
+}
 .itens{
     display: flex;
     flex-direction: column;
