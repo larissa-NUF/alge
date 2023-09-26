@@ -17,22 +17,23 @@
     
     <main class="container">
         <form class="register-box" action="../api/cadastrar.php" method="post">
-            <span class="registra">Registre-se</span>
+            <h2 class="registra">Registre-se</h2>
             <input type="text" placeholder="Nome" name="nome" class="campo" required>
-            <div>
-                <input type="text" placeholder="Telefone Fixo" name="telefone_fixo" class="campo phone" id="tel">
-                <input type="text" placeholder="Celular" name="telefone_celular" class="campo cellphone" id="cell" required>
+            <input type="text" placeholder="Sobrenome" name="sobrenome" class="campo" required>
+            <div class="input-group" id="input-group">
+                <input type="tel" placeholder="Telefone Fixo" name="telefone_fixo" class="campo" id="tel">
+                <input type="tel" placeholder="Celular" name="telefone_celular" class="campo" id="cell" required>
             </div>
-            <input type="text" placeholder="CPF" name="cpf" class="campo" id="cpf">
+            <input type="text" placeholder="CPF" name="cpf" class="campo cpf" id="cpf">
 
             <input type="text" placeholder="CEP" name="cep" class="campo" id="cep" onblur=" consultarCep() ">
-            <div>
+            <div class="input-group">
                 <input type="text" placeholder="Endereço"  name="endereco" class="campo endereço" id="logradouro">
                 <input type="text" placeholder="Nº" name="numero" class="campo numberHouse">
             </div>
             <input type="text" placeholder="Complemento" name="complemento" class="campo" id="complemento">
             <input type="text" placeholder="Bairro" name="bairro" class="campo" id="bairro">
-            <div>
+            <div class="input-group">
                 <input type="text" placeholder="Cidade" name="cidade" class="campo cidade" id="cidade">
                 <input type="text" placeholder="UF" name="uf" class="campo uf" id="uf">
             </div>

@@ -1,7 +1,7 @@
 <?php
 
 $server = "localhost";
-$db = "alge";
+$db = "alge_db";
 $user = "root";
 $password = "usbw";
 /* $password = ""; */

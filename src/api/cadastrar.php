@@ -2,6 +2,7 @@
 include 'conexao.php';
 
 $nome = $_POST['nome'];
+$sobrenome = $_POST['sobrenome'];
 $telefone_fixo = $_POST['telefone_fixo'];
 $telefone_celular = $_POST['telefone_celular'];
 $cpf = $_POST['cpf'];

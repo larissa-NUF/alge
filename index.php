@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include "src/api/conexao.php";
 ?>
 
@@ -38,32 +37,31 @@
 
             <?php 
                 if (isset($_SESSION["email"]) && isset($_SESSION["senha"])){
-            ?>
-            <div class='logado'>
-                <div class='menu'>
-                    <div class='dropdown'>
-                        <img src='src/img/user_icon.png' alt='ícone de usuário' class='userIcon'>
-                        <button onclick='showDropdown()' class='dropBtn' id='btnDU'>
-                            <p>Usuário</p>
-                            <i class='fa-solid fa-chevron-down'></i>
-                        </button>
-                        <div class='dropdown-container' id='myDropdown' contentEditable onblur='fechar()'>
-                            <a href='#' id='btnPerfil'>Perfil</a>
-                            <a href='#' id='btnSair'>Sair</a>
+                    echo "
+                        <div class='logado'>
+                            <div class='menu'>
+                                <div class='dropdown'>
+                                    <img src='src/img/user_icon.png' alt='ícone de usuário' class='userIcon'>
+                                    <button onclick='showDropdown()' class='dropBtn' id='btnDU'>
+                                        <p>".$_SESSION["nome"]."</p>
+                                        <i class='fa-solid fa-chevron-down'></i>
+                                    </button>
+                                    <div class='dropdown-container' id='myDropdown' contentEditable onblur='fechar()'>
+                                        <a href='#' id='btnPerfil'>Perfil</a>
+                                        <a href='#' id='btnSair'>Sair</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='iconsMenu'>
+                                <div class='i'>
+                                    <i class='fa-regular fa-bell'></i>
+                                </div>
+                                <div class='i'>
+                                    <i id='btnIconCarrinho' class='fa-solid fa-cart-shopping'></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class='iconsMenu'>
-                    <div class='i'>
-                        <i class='fa-regular fa-bell'></i>
-                    </div>
-                    <div class='i'>
-                        <i id='btnIconCarrinho' class='fa-solid fa-cart-shopping'></i>
-                    </div>
-                </div>
-            </div>
-            <script> console.log('Login foi feito com sucesso') </script>
-            <?php 
+                        <script> console.log('Login foi feito com sucesso') </script>";
                 } else { 
             ?>
             <div class='deslogado'>
@@ -112,7 +110,7 @@
     ?>
 
     <div class="conteudo">
-        <iframe src="src/page/showcase.html" frameborder="0" id="tela"></iframe>
+        <iframe src="src/page/showcase.php" frameborder="0" id="tela"></iframe>
     </div>
 
     <script src="https://kit.fontawesome.com/8ec8caa784.js" crossorigin="anonymous"></script>

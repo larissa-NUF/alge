@@ -2,18 +2,16 @@
 session_start();
 include 'conexao.php';
 
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
 $sql = "SELECT nome, email, senha from tb_usuario where email = '$email' and senha = '$senha'";
 $query = $conn->query($sql);
-if ($query == true){
-    echo "<script>
-            alert('Usuário logado');
-        </script>";
-    
-    $_SESSION["email"] = $email;
-    $_SESSION["senha"] = $senha;
+if ($query->num_rows > 0){
+    $row = $query->fetch_assoc();
+    $_SESSION["nome"] = $row['nome'];
+    $_SESSION["email"] = $row['email'];
+    $_SESSION["senha"] = $row['senha'];
 
     header("Location: ../../index.php");
     exit();

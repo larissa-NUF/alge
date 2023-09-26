@@ -154,6 +154,7 @@ nav{
 }
 .dropdown-container a:hover{
     background-color: #dfdfdf !important;
+    cursor: pointer;
 }
 
 .menu div:nth-child(2) i:first-child, .dropBtn img{
