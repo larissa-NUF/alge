@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/showcase.css">
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Inicio - Alge</title>
 </head>
 <body>
@@ -38,6 +39,8 @@
                 echo '<h3 class="preco">R$ ' . $row["Preco"] . '</h3>'; 
                 echo '<p class="dt">' . ($row['EntregaRapida'] ? 'Entrega rápida' : '') . '</p>';
                 echo '<p class="descricaoTexto">' . $row["Descricao"] . '</p>';
+                echo '<div><i class="fa-solid fa-trash"></i>';
+                echo '<i class="fa-solid fa-pen"></i></div>';
                 echo '</div></div></div>';
             }
             echo '</section>';
@@ -46,7 +49,6 @@
         }
         $conn->close();
         ?>
-
 
         <div class="card">
             <i class="fas fa-plus-circle" id="formToggle"></i>

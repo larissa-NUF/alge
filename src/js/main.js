@@ -95,14 +95,12 @@ btn.forEach(element => {
 });
 
 
-document.getElementById('formToggle').addEventListener('click', function() {
-  var form = document.querySelector('.createItemForm');
-  var icon = document.getElementById('formToggle');
-  if (form.style.display === "none") {
-      form.style.display = "flex";
-      icon.style.display = "none";
+$('#formToggle').click(function(){
+  if ($('.createItemForm').css('display') === 'none') {
+    $('.createItemForm').css('display', 'flex');
+    $('#formToggle').hide();
   } else {
-      form.style.display = "none";
-      icon.style.display = "block";
+    $('.createItemForm').hide();
+    $('#formToggle').show();
   }
-});
+})

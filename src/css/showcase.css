@@ -22,7 +22,17 @@ table tbody, table thead{
 
 .detalhes{
     padding: 10px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
+
+.fa-solid {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
 
 .tituloProduto{
     font-weight: 100;
