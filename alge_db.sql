@@ -44,10 +44,8 @@ CREATE TABLE IF NOT EXISTS `itenscompra` (
 
 INSERT INTO `itenscompra` (`ID`, `Nome`, `Imagem`, `Preco`, `EntregaRapida`, `Descricao`) VALUES
 (1, 'Ursinho', 'img_1.png', '15.00', 1, 'Ursinho fofinho'),
-(2, 'Caneca', 'img_4.png', '20.00', 0, ''),
 (3, 'Caneca Simples', 'img_5.png', '18.00', 1, 'Caneca SimplÃªs'),
 (4, 'Caneca do Mickey', 'img_6.png', '24.00', 1, 'Canequinha do Mickey Mouse'),
-(5, 'Ursinho', 'img_1.png', '15.00', 0, '');
 
 -- --------------------------------------------------------
 
