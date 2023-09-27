@@ -4,23 +4,18 @@ table tbody, table thead{
     
 }
 .itens{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 4em;
-    align-items: center;
-    height: 100%; 
-}
-
-.itens_row{
-    display: flex;
-    justify-content: space-evenly;
+    align-items: start;
+    justify-items: center;
+    margin-bottom: 4em;
 }
 
 .item{
-    width: 17%;
-    min-width: 250px;
+    width: 100%;
     border-radius: 5px;
-    min-height: 450px;
+    min-height: 400px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
     background-color: #ffff;
 }
@@ -63,10 +58,7 @@ table tbody, table thead{
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom: solid 1px #dfdfdf;
-
 }
-
-
 
 .titulo{
     margin: 1.2em 0;
@@ -125,4 +117,45 @@ table tbody, table thead{
 
 .dropdown label{
     margin-bottom: 1em;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: .5rem;
+    display: grid;
+    place-items: center;
+    gap: .5rem;
+}
+
+.fas.fa-plus-circle {
+    font-size: 2em;
+    cursor: pointer;
+    display: block;
+}
+
+.createItemForm {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.createItemForm input, .createItemForm textarea {
+    padding: 10px;
+    border: none;
+}
+
+.createItemForm button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.createItemForm button:hover {
+    background-color: #45a049;
 }

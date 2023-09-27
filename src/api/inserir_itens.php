@@ -16,6 +16,7 @@ if (move_uploaded_file($_FILES['imagem']['tmp_name'], $target_file)) {
 
     if ($conn->query($sql) === true) {
         echo "<script> alert('Novo item criado')</script>";
+        header("Refresh:0");
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }

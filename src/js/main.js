@@ -93,3 +93,16 @@ btn.forEach(element => {
     });
   }
 });
+
+
+document.getElementById('formToggle').addEventListener('click', function() {
+  var form = document.querySelector('.createItemForm');
+  var icon = document.getElementById('formToggle');
+  if (form.style.display === "none") {
+      form.style.display = "flex";
+      icon.style.display = "none";
+  } else {
+      form.style.display = "none";
+      icon.style.display = "block";
+  }
+});
