@@ -62,12 +62,6 @@ paginasBtn.forEach(element => {
 sidebar.onblur = function() {
     sidebar.classList.remove('showSide');
 }
-let btnSair = document.getElementById('btnSair');
-btnSair.addEventListener("click", () => { 
-    localStorage.setItem("user", false); 
-    statusUser(); 
-    tela.src = "src/page/showcase.html";
-})
 
 let modal = document.querySelector('.login')
 

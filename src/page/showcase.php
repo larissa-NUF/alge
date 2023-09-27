@@ -25,6 +25,7 @@
 
         <?php 
         include '../api/conexao.php';
+        session_start();
         
         $sql = "SELECT * FROM ItensCompra";
         $query = $conn->query($sql);
@@ -48,6 +49,7 @@
             echo "Nenhum item encontrado";
         }
         $conn->close();
+        if ($_SESSION["tipo"] == "1"){
         ?>
 
         <div class="card">
@@ -62,7 +64,7 @@
                 <button type="submit">Inserir item</button>
             </form>
         </div>
-
+<?php } ?>
         
     </main>
    
