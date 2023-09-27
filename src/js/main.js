@@ -96,11 +96,11 @@ btn.forEach(element => {
 
 
 $('#formToggle').click(function(){
-  if ($('.createItemForm').css('display') === 'none') {
-    $('.createItemForm').css('display', 'flex');
+  if ($('#createItemForm').css('display') === 'none') {
+    $('#createItemForm').css('display', 'flex');
     $('#formToggle').hide();
   } else {
-    $('.createItemForm').hide();
+    $('#createItemForm').hide();
     $('#formToggle').show();
   }
 })

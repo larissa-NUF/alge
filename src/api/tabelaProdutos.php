@@ -6,7 +6,7 @@ include "conexao.php";
         echo "sem resultados";
       } 
 
-    if(array_key_exists('button1', $_POST)) {
+        if(array_key_exists('button1', $_POST)) {
             delete();
         }
         else if(array_key_exists('button2', $_POST)) {

@@ -40,9 +40,24 @@
                 echo '<h3 class="preco">R$ ' . $row["Preco"] . '</h3>'; 
                 echo '<p class="dt">' . ($row['EntregaRapida'] ? 'Entrega rápida' : '') . '</p>';
                 echo '<p class="descricaoTexto">' . $row["Descricao"] . '</p>';
-                echo '<div><i class="fa-solid fa-trash"></i>';
-                echo '<i class="fa-solid fa-pen"></i></div>';
-                echo '</div></div></div>';
+                if ($_SESSION["tipo"] == "1"){
+                echo '<div><form action="../api/delete_itens.php" method="post">
+                <input name="id" value="' . $row["ID"] . '" type="hidden"/>
+                <button type="submit"> Deletar <i class="fa-solid fa-trash"></i></button>
+                </form>';
+                
+                echo '<div class="card"><form action="../api/editar_itens.php" method="post" class="createItemForm " style="display: flex;">
+                Editar item
+                <input name="id" value="' . $row["ID"] . '" type="hidden"/>
+                <input type="text" value="' . $row["Nome"] . '" placeholder="Nome" name="nome" required>
+                <input type="number" value="' . $row["Preco"] . '" step="0.01" placeholder="Preço" name="preco" required>
+                <label for="entrega_rapida">Entrega rápida</label>
+                <input type="checkbox" ' . ($row['EntregaRapida'] == 1    ? 'checked' : '') . ' id="entrega_rapida" name="entrega_rapida">
+                <textarea placeholder="Descrição"  name="descricao">' . $row["Descricao"] . '</textarea>
+                <button type="submit">Salvar</button>
+            </form></div>';
+                }
+                echo '</div></div></div></div>';
             }
             echo '</section>';
         } else {
@@ -54,7 +69,7 @@
 
         <div class="card">
             <i class="fas fa-plus-circle" id="formToggle"></i>
-            <form action="../api/inserir_itens.php" method="post" enctype="multipart/form-data" class="createItemForm">
+            <form action="../api/inserir_itens.php" method="post" enctype="multipart/form-data" class="createItemForm" id="createItemForm">
                 <input type="text" placeholder="Nome" name="nome" required>
                 <input type="file" name="imagem">
                 <input type="number" step="0.01" placeholder="Preço" name="preco" required>

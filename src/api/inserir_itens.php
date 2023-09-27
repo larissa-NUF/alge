@@ -1,7 +1,6 @@
 <?php 
 
 include 'conexao.php';
-
 $nome = $_POST['nome'];
 $preco = $_POST['preco'];
 $entregaRapida = isset($_POST['entrega_rapida']) ? 1 : 0;
@@ -16,7 +15,7 @@ if (move_uploaded_file($_FILES['imagem']['tmp_name'], $target_file)) {
 
     if ($conn->query($sql) === true) {
         echo "<script> alert('Novo item criado')</script>";
-        header("Refresh:0");
+        header("Refresh:0; url=../page/showcase.php");
     } else {
         echo "Erro: " . $sql . "<br>" . $conn->error;
     }
