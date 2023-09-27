@@ -24,6 +24,7 @@
 
         <?php 
         include '../api/conexao.php';
+        session_start();
         
         $sql = "SELECT * FROM ItensCompra";
         $query = $conn->query($sql);
@@ -45,8 +46,9 @@
             echo "Nenhum item encontrado";
         }
         $conn->close();
+        if ($_SESSION["tipo"] == "1"){
         ?>
-
+        
 
         <div class="card">
             <i class="fas fa-plus-circle" id="formToggle"></i>
@@ -60,7 +62,7 @@
                 <button type="submit">Inserir item</button>
             </form>
         </div>
-
+<?php } ?>
         
     </main>
    

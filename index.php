@@ -1,5 +1,6 @@
 <?php
     include "src/api/conexao.php";
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -48,10 +49,11 @@
                                     </button>
                                     <div class='dropdown-container' id='myDropdown' contentEditable onblur='fechar()'>
                                         <a href='#' id='btnPerfil'>Perfil</a>
-                                        <a href='#' id='btnSair'>Sair</a>
+                                       
                                     </div>
                                 </div>
                             </div>
+                            <a href='src/api/deslogar.php' id='btnSair'>Sair</a>
                             <div class='iconsMenu'>
                                 <div class='i'>
                                     <i class='fa-regular fa-bell'></i>
