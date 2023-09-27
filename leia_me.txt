@@ -1,0 +1,1 @@
+Usar o email = "admin@gmail.com" e senha = "123" para entrar como administrador e executar CRUD
