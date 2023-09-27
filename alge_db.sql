@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 26-Set-2023 às 03:36
+-- Data de Criação: 27-Set-2023 às 01:08
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -21,6 +21,30 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `alge_db` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `alge_db`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `itenscompra`
+--
+
+CREATE TABLE IF NOT EXISTS `itenscompra` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Nome` varchar(255) DEFAULT NULL,
+  `Imagem` varchar(255) DEFAULT NULL,
+  `Preco` decimal(5,2) DEFAULT NULL,
+  `EntregaRapida` tinyint(1) DEFAULT NULL,
+  `Descricao` text,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Extraindo dados da tabela `itenscompra`
+--
+
+INSERT INTO `itenscompra` (`ID`, `Nome`, `Imagem`, `Preco`, `EntregaRapida`, `Descricao`) VALUES
+(1, 'Ursinho', 'img_1.png', '15.00', 1, 'Ursinho fofinho'),
+(2, 'Caneca', 'img_4.png', '20.00', 0, '');
 
 -- --------------------------------------------------------
 
@@ -52,9 +76,9 @@ CREATE TABLE IF NOT EXISTS `tb_usuario` (
 -- Extraindo dados da tabela `tb_usuario`
 --
 
-INSERT INTO `tb_usuario` (`id`, `nome`, `telefone_fixo`, `telefone_celular`, `cpf`, `cep`, `endereco`, `numero`, `complemento`, `bairro`, `cidade`, `uf`, `email`, `senha`, `tipo`, `sobrenome`) VALUES
-(1, 'Geovanne Meloni ', '', '(11) 98144-3833', '521.135.243-21', '09361-120', 'Avenida Kenzo Sasaki', '100', NULL, 'Jardim Camila', 'MauÃ¡', 'SP', 'geovamelo@gmail.com', '1234', 0, NULL),
-(2, 'Boris', '(11) 9814-43', '(11) 98144-3833', '552.133.128-02', '09361-020', 'Rua Pedro EugÃªnio Pereira', '960', NULL, 'Jardim SÃ£o Judas', 'MauÃ¡', 'SP', 'geovamelo4431@gmail.com', '123', 0, NULL);
+INSERT INTO `tb_usuario` (`id`, `nome`, `sobrenome`, `telefone_fixo`, `telefone_celular`, `cpf`, `cep`, `endereco`, `numero`, `complemento`, `bairro`, `cidade`, `uf`, `email`, `senha`, `tipo`) VALUES
+(1, 'Geovanne Meloni ', NULL, '', '(11) 98144-3833', '521.135.243-21', '09361-120', 'Avenida Kenzo Sasaki', '100', NULL, 'Jardim Camila', 'MauÃ¡', 'SP', 'geovamelo@gmail.com', '1234', 0),
+(2, 'Boris', NULL, '(11) 9814-43', '(11) 98144-3833', '552.133.128-02', '09361-020', 'Rua Pedro EugÃªnio Pereira', '960', NULL, 'Jardim SÃ£o Judas', 'MauÃ¡', 'SP', 'geovamelo4431@gmail.com', '123', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
