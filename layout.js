@@ -9,15 +9,16 @@ let userProfile = document.getElementById("userProfile");
 let dropdown = document.getElementById("myDropdown")
 
 /* Chama uma função que alterna a classe show */
+
 const showDropdown = () => {
     dropdown.classList.toggle("show")
 }
 
 /* Função que serve para que quando o alvo não for o Dropdown, o Dropdown tem seu display mudado para none */
 
-function fechar(){
-    dropdown.classList.remove('show');
-}
+dropdown.addEventListener("blur", ()=>{
+    dropdown.classList.remove("show");
+})
 
 menu.getElementsByTagName('i')[0].addEventListener("click",function(){
     sidebar.classList.toggle('showSide');  
@@ -38,22 +39,23 @@ paginas.forEach(element => {
 });
 
 let paginasBtn = [
-    {btn: "btnSobre", pagina: "about"},
-    {btn: "btnCarrinho", pagina: "shopcart"},
-    {btn: "btnCriarConta", pagina: "singin"},
-    {btn: "btnLogo", pagina: "showcase"},
-    {btn: "btnPerfil", pagina: "userData"},
-    {btn: "btnIconCarrinho", pagina: "shopcart"},
-    {btn: "btnVer1", pagina: "product"},
-    {btn: "btnVer2", pagina: "product"},
-    {btn: "btnVer3", pagina: "product"},
+    {btn: "btnSobre", pagina: "about.html"},
+    {btn: "btnCarrinho", pagina: "shopcart.html"},
+    {btn: "btnCriarConta", pagina: "singin.html"},
+    {btn: "btnLogo", pagina: "showcase.html"},
+    {btn: "btnPerfil", pagina: "userData.php"},
+    {btn: "saida", pagina: "deslogar.php"},
+    {btn: "btnIconCarrinho", pagina: "shopcart.html"},
+    {btn: "btnVer1", pagina: "product.html"},
+    {btn: "btnVer2", pagina: "product.html"},
+    {btn: "btnVer3", pagina: "product.html"},
 ];
 
 paginasBtn.forEach(element => {
     let item = document.getElementById(element.btn);
     if(item){
         item.addEventListener("click", function(){
-            tela.src = `src/page/${element.pagina}.html`;
+            tela.src = `src/page/${element.pagina}`;
         })
     }
 });

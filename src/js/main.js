@@ -94,7 +94,6 @@ btn.forEach(element => {
   }
 });
 
-
 $('#formToggle').click(function(){
   if ($('#createItemForm').css('display') === 'none') {
     $('#createItemForm').css('display', 'flex');
