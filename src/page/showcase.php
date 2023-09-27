@@ -41,7 +41,7 @@
                 echo '<h3 class="preco">R$ ' . $row["Preco"] . '</h3>'; 
                 echo '<p class="dt">' . ($row['EntregaRapida'] ? 'Entrega rápida' : '') . '</p>';
                 echo '<p class="descricaoTexto">' . $row["Descricao"] . '</p>';
-                if ($_SESSION["tipo"] == "1"){
+                if (isset($_SESSION["tipo"]) && $_SESSION["tipo"] == "1"){
                 echo '<div><form action="../api/delete_itens.php" method="post">
                 <input name="id" value="' . $row["ID"] . '" type="hidden"/>
                 <button type="submit"> Deletar <i class="fa-solid fa-trash"></i></button>
